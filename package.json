@@ -5,6 +5,10 @@
   "dependencies": {
     "git@github.com:heapwolf/cxx-flat-tree": "ceda12f3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datcxx/hypercore.git"
+  },
   "flags": [
     "-o ./bin/hypercore",
     "-std=c++2a",

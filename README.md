@@ -9,7 +9,7 @@ Run install and then build.
 
 ```bash
 build i
-build -O3
+build -g
 ```
 
 [0]:https://github.com/datcxx/build

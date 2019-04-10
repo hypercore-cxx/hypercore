@@ -2,7 +2,7 @@
 Hypercore is a secure, distributed append-only log.
 
 # BUILD
-To generate a `shared library`, install the [`build-tool`][0] and run the
+To generate a `shared library`, install the [`build`][0] tool and run the
 following command...
 
 Run install and then build.

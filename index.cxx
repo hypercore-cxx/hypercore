@@ -1,7 +1,8 @@
+#include "index.hxx"
 #include "deps/datcxx/cxx-flat-tree/index.hxx"
 
-#include <iostream>
-
-int main () {
-  std::cout << flatTree::index(0, 0) << std::endl;
-}
+namespace Hypercore {
+  size_t getIndex () {
+    return flatTree::index(0, 0);
+  }
+} // namespace Hypercore

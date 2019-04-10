@@ -1,20 +1,24 @@
 {
   "name": "hypercore",
-  "main": "index.cxx",
   "description": "Hypercore is a secure, distributed append-only log.",
-  "dependencies": {
-    "git@github.com:datcxx/cxx-flat-tree": "ceda12f3"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datcxx/cxx-hypercore.git"
+    "url": "git@github.com:datcxx/cxx-hypercore.git"
+  },
+  "dependencies": {
+    "git@github.com:datcxx/cxx-flat-tree": "c051eac4"
+  },
+  "scripts": {
+    "test": "c++ -std=c++2a test/index.cxx lib/hypercore.so -o test/index && ./test/index"
   },
   "flags": [
-    "-o ./bin/hypercore",
+    "-shared",
+    "-o ./lib/hypercore.so",
     "-std=c++2a",
     "-ferror-limit=2"
   ],
-  "scripts": {
-    "test": "c++ test/index.cxx -o test/index && ./test/index"
-  }
+  "files": [
+    "index.hxx",
+    "index.cxx"
+  ]
 }

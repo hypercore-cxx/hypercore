@@ -6,10 +6,15 @@
     "url": "git@github.com:datcxx/cxx-hypercore.git"
   },
   "dependencies": {
-    "git@github.com:datcxx/cxx-flat-tree": "c051eac4"
+    "git@github.com:datcxx/cxx-flat-tree": "c051eac4",
+    "git@github.com:datcxx/cxx-eventemitter": "63d10af1",
+    "git@github.com:datcxx/cxx-timers": "7d2ff2b7",
+    "git@github.com:heapwolf/cxx-tap": "07821de0"
   },
   "scripts": {
-    "test": "c++ -std=c++2a test/index.cxx lib/hypercore.so -o test/index && ./test/index"
+    "test": "c++ -std=c++2a test/index.cxx lib/hypercore.so -o test/index && ./test/index",
+    "shared": "",
+    "static": ""
   },
   "flags": [
     "-shared",

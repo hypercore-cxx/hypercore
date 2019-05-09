@@ -1,3 +1,4 @@
 /deps
 /bin/*
-/lib/*
+/lib/hypercore.so
+/lib/hypercore.a

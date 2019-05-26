@@ -12,7 +12,12 @@
     "git@github.com:heapwolf/cxx-tap": "07821de0"
   },
   "scripts": {
-    "test": "c++ -std=c++2a test/index.cxx lib/hypercore.so -o test/index && ./test/index",
+    "test": [
+      "clang++ -std=c++2a -stdlib=libc++",
+      "test/index.cxx lib/hypercore.so",
+      "-o test/index",
+      "&& ./test/index"
+    ],
     "shared": "",
     "static": ""
   },
@@ -20,6 +25,7 @@
     "-shared",
     "-o ./lib/hypercore.so",
     "-std=c++2a",
+    "-stdlib=libc++",
     "-ferror-limit=2"
   ],
   "files": [

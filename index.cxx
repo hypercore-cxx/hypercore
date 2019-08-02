@@ -1,5 +1,5 @@
 #include "index.hxx"
-#include "deps/datcxx/flat-tree/index.hxx"
+#include "deps/datcxx/cxx-flat-tree/index.hxx"
 
 namespace Hypercore {
   size_t getIndex () {

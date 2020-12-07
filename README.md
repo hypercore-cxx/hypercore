@@ -30,7 +30,7 @@ following command...
 Run install and then build.
 
 ```bash
-build i
+build -i
 build test
 build run shared
 ```

@@ -1,0 +1,6 @@
+[submodule "deps/datcxx/cxx-tap"]
+	path = deps/heapwolf/cxx-tap
+	url = https://github.com/xloem/tap.git
+[submodule "deps/datcxx/flat-tree"]
+	path = deps/datcxx/flat-tree
+	url = https://github.com/xloem/flat-tree.git
